@@ -14,5 +14,12 @@ public class Point {
 	public int distance(Point point) {
 		return Math.abs(this.x - point.x) + Math.abs(this.y - point.y);
 	}
+	
+		
+	@Override
+	public boolean equals(Object point) {
+		Point extPoint = (Point)point;
+		return extPoint.x == this.x && extPoint.y == this.y;
+	}
 }
 
